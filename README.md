@@ -6,5 +6,5 @@
 
 #### ส่งการบ้านครั้งที่ 1
 
-    [CLIP1(Youtube)](https://youtu.be/qxfaD4DFBt8)
+   [CLIP1(Youtube)](https://youtu.be/qxfaD4DFBt8)
 
