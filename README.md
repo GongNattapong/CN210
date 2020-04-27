@@ -8,7 +8,7 @@
 
   * [CLIP1(Youtube)](https://youtu.be/qxfaD4DFBt8)
   
-  ![img](https://github.com/GongNattapong/CN210/blob/master/Clip1.png)
+  ![img](Clip1.png)
   
   ** Discription
   
@@ -16,7 +16,7 @@
 
   * [CLIP2(Youtube)](https://youtu.be/QzaD13TMT6o)
   
-  ![](https://github.com/GongNattapong/CN210/blob/master/Clip2.png)
+  ![](Clip2.png)
   
   ** Discription
   
@@ -24,7 +24,7 @@
 
   * [CLIP3(Youtube)](https://youtu.be/hyol9zuLm_Q)
   
-  ![](https://github.com/GongNattapong/CN210/blob/master/Clip3.png)
+  ![](Clip3.png)
   
   ** Discription
   
@@ -32,7 +32,7 @@
 
   * [CLIP4(Youtube)](https://youtu.be/hsoW6MwFPeI)
   
-  ![](https://github.com/GongNattapong/CN210/blob/master/Clip4.png)
+  ![](Clip4.png)
   
   ** Discription
   
@@ -40,7 +40,7 @@
 
   * [CLIP5(Youtube)](https://youtu.be/LtYXk1vCkGU)
   
-  ![](https://github.com/GongNattapong/CN210/blob/master/Clip5.png)
+  ![](Clip5.png)
   
   ** Discription
   
@@ -48,6 +48,6 @@
 
   * [CLIP6(Youtube)](https://youtu.be/pyeTy94TIKw)
   
-  ![](https://github.com/GongNattapong/CN210/blob/master/Clip6.png)
+  ![](Clip6.png)
   
   ** Discription
