@@ -6,7 +6,7 @@
 วิชาสถาปัตยกรรมคอมพิวเตอร์
 
 #### ส่งการบ้านครั้งที่ 1
-  * ![](Clip1.png)
+  ![](Clip1.png)
 
   * [CLIP1(Youtube)](https://youtu.be/qxfaD4DFBt8)
     
@@ -14,7 +14,7 @@
   
 #### ส่งการบ้านครั้งที่ 2
 
-  * ![](Clip2.png)
+  ![](Clip2.png)
   
   * [CLIP2(Youtube)](https://youtu.be/QzaD13TMT6o)
   
@@ -22,7 +22,7 @@
   
 #### ส่งการบ้านครั้งที่ 3
 
-  * ![](Clip3.png)
+  ![](Clip3.png)
   
   * [CLIP3(Youtube)](https://youtu.be/hyol9zuLm_Q)
   
@@ -30,27 +30,27 @@
   
 #### ส่งการบ้านครั้งที่ 4
 
-  * [CLIP4(Youtube)](https://youtu.be/hsoW6MwFPeI)
-  
   ![](Clip4.png)
+  
+  * [CLIP4(Youtube)](https://youtu.be/hsoW6MwFPeI)
   
   ** คำอธิบาย :
   
 #### ส่งการบ้านครั้งที่ 5
-
-  * [CLIP5(Youtube)](https://youtu.be/LtYXk1vCkGU)
   
   ![](Clip5.png)
+  
+  * [CLIP5(Youtube)](https://youtu.be/LtYXk1vCkGU)
   
   ** คำอธิบาย :
   
 #### ส่งการบ้านครั้งที่ 6
 
-  * [CLIP6(Youtube)](https://youtu.be/pyeTy94TIKw)
-  
   ![](Clip6.png)
   
-  ** คำอธิบาย :
+  * [CLIP6(Youtube)](https://youtu.be/pyeTy94TIKw)
+  
+  ** คำอธิบาย : คลิปนี้จะอธิบายเกี่ยกับ
   
   #### ส่งการบ้านครั้งที่ 7
  
