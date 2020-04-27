@@ -9,24 +9,22 @@
   * ![](Clip1.png)
 
   * [CLIP1(Youtube)](https://youtu.be/qxfaD4DFBt8)
-  
-  
-  
+    
   ** คำอธิบาย :
   
 #### ส่งการบ้านครั้งที่ 2
 
-  * [CLIP2(Youtube)](https://youtu.be/QzaD13TMT6o)
+  * ![](Clip2.png)
   
-  ![](Clip2.png)
+  * [CLIP2(Youtube)](https://youtu.be/QzaD13TMT6o)
   
   ** คำอธิบาย :
   
 #### ส่งการบ้านครั้งที่ 3
 
-  * [CLIP3(Youtube)](https://youtu.be/hyol9zuLm_Q)
+  * ![](Clip3.png)
   
-  ![](Clip3.png)
+  * [CLIP3(Youtube)](https://youtu.be/hyol9zuLm_Q)
   
   ** คำอธิบาย :
   
