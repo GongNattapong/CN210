@@ -8,7 +8,7 @@
 
   * [CLIP1(Youtube)](https://youtu.be/qxfaD4DFBt8)
   
-  ![img](https://drive.google.com/open?id=1QUThxXF4IW7C1hlkaDRt0yyKJ6vbs_hv)
+  ![img](https://github.com/GongNattapong/CN210/blob/master/Clip1.png)
   
   ** Discription
   
