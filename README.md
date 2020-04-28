@@ -60,7 +60,9 @@
   
   * [CLIP6(Youtube)](https://youtu.be/pyeTy94TIKw)
   
-  ** คำอธิบาย : คลิปนี้จะอธิบายเกี่ยวกับ
+  ** คำอธิบาย : คลิปนี้จะอธิบายเกี่ยวกับการทำงาน State Machine ของ r-format ใน cpu รูปแบบ Multicycle โดยจะส่วนประกอบของการทำงานจะมีั้ง Fetch, 
+               Reg/Dec, Exec, Wr โดยการทำงานจะใช้ MemRead, MemWrite, lorD, IRWrite, ALUSrcA, ALUSrcB, ALUOP, PCWrite, PCSource, RegWrite, 
+               MemtoReg และ RegDst ในการทำงาน
   
   #### ส่งการบ้านครั้งที่ 7
  
