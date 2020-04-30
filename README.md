@@ -99,9 +99,9 @@
                 lorD = X                                    ALUOP = 0 (=add)
                 IRWrite = 0
                 
-    T3 : ExecALU  ALUSrcA = 1 (=A=Reg[$rs])     T4 : WriteReg  RegWrite = 1 (Reg[$rd] <- ALUout)
-                  ALUSrcB = 0 (=B=Reg[$rt])                    MemtoReg = 0 (=ALUout)
-                  ALUOP = 0 (=IR[28-26])                       RegDst = 1 (=$rd)
+    T3 : ExecALU  ALUSrcA = 1 (=A=Reg[$rs])    T4 : WriteReg  RegWrite = 1 (Reg[$rd] <- ALUout)
+                  ALUSrcB = 0 (=B=Reg[$rt])                   MemtoReg = 0 (=ALUout)
+                  ALUOP = 0 (=IR[28-26])                      RegDst = 1 (=$rd)
                      
   #### ส่งการบ้านครั้งที่ 7
  
