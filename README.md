@@ -63,8 +63,13 @@
   
   ** คำอธิบาย : คลิปนี้จะอธิบายเกี่ยวกับการทำงานของคำสั่ง Load Word ในรูปแบบ Multicycle โดยเริ่มต้นจากการ Fetch จะเป็นการส่งค่าให้ register และส่งค่าให้ ALU 
                เพื่อ +4 และพร้อมทำขั้นตอนต่อไป เสร็จแล้วก็ทำการ Fetch+1 เพื่อเก็บค่าเข้า register 2 ตัว และส่งเข้าไปที่ ALUOut หลังจากนั้นทำการ Mem1 เป็นการส่ง
-               ค่าจาก Register เข้า ALU เพื่อทำคำสั่งแล้วส่งให้ ALUOut หลังจากนั้นก็ส่งเข้า Memory data register
-  
+               ค่าจาก Register เข้า ALU เพื่อทำคำสั่งแล้วส่งให้ ALUOut หลังจากนั้นก็ส่งเข้า Memory data register ซึ่งมีคำสั่งเป็น Step ดังนี้
+        
+    T1 Fetch               IR <- MEMORY[PC] & PC <- PC + 4
+    T2 Fetch + 1           A <- Reg[IR[25-21]] & B <- Reg[IR[20-16]] & ALUOut <- PC + signext(IR[15-0]) << 2
+    T3 Dispatch1: Mem1     ALUOut <- A + sign_extend(IR[15-0])
+    T4 Dispatch 2: Lw2     Memory data register <- ALUOut
+    
 #### ส่งการบ้านครั้งที่ 5
   
   ![](Clip5.png)
@@ -74,7 +79,11 @@
   ** คำอธิบาย : คลิปนี้จะอธิบายเกี่ยวกับการทำงานของคำสั่ง Branch On Equal ในรูปแบบ Multicycle โดยจะเริ่มต้นจากการ Fetch จะเป็นการส่งค่าให้ register และส่งค่า
                ให้ ALU เพื่อ +4 และพร้อมทำขั้นตอนต่อไป เสร็จแล้วก็ทำการถอดรหัสเพื่อเก็บค่าเข้า register 2 ตัว และอ่านค่า offset+pc จากนั้นส่งเข้าไปที่ ALUOut 
                หลังจากนั้นทำการเช็ค register 2 ตัวนี้ว่าเท่ากันมั้ย ถ้าเท่ากันจะส่งให้ ALUOut แต่ถ้าไม่เท่ากันจะส่งให้ PC
-  
+               
+    T1 Fetch               IR <- MEMORY[PC] & PC <- PC + 4
+    T2 Fetch + 1           A <- Reg[IR[25-21]] & B <- Reg[IR[20-16]] & ALUOut <- PC + signext(IR[15-0]) << 2
+    T3 Dispatch 1     If (A == B) : PC = ALUOut : PC <- 0 
+             
 #### ส่งการบ้านครั้งที่ 6
 
   ![](Clip6.png)
@@ -83,8 +92,16 @@
   
   ** คำอธิบาย : คลิปนี้จะอธิบายเกี่ยวกับการทำงาน State Machine ของ r-format ใน cpu รูปแบบ Multicycle โดยจะส่วนประกอบของการทำงานจะมีั้ง Fetch, 
                Reg/Dec, Exec, Wr โดยการทำงานจะใช้ MemRead, MemWrite, lorD, IRWrite, ALUSrcA, ALUSrcB, ALUOP, PCWrite, PCSource, RegWrite, 
-               MemtoReg และ RegDst ในการทำงาน
-  
+               MemtoReg และ RegDst ในการทำงาน โดยมี State Machine คร่าวๆ ดังนี้
+               
+    T1 : Fetch       MemRead         T2 : Decode  ALUSrcA = 0 (=PC)              T3 : ExecALU  ALUSrcA = 1 (=A=Reg[$rs])
+                     MemWrite = 0                 ALUSrcB = 3 (=signext(IR<<2))                ALUSrcB = 0 (=B=Reg[$rt])|
+                     lorD = X                     ALUOP = 0 (=add)                             ALUOP = 0 (=IR[28-26])
+                     IRWrite = 0
+    T4 : WriteReg    RegWrite = 1 (Reg[$rd] <- ALUout)
+                     MemtoReg = 0 (=ALUout)
+                     RegDst = 1 (=$rd)
+                     
   #### ส่งการบ้านครั้งที่ 7
  
   ![](Clip7.jpg)
