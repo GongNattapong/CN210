@@ -94,13 +94,14 @@
                Reg/Dec, Exec, Wr โดยการทำงานจะใช้ MemRead, MemWrite, lorD, IRWrite, ALUSrcA, ALUSrcB, ALUOP, PCWrite, PCSource, RegWrite, 
                MemtoReg และ RegDst ในการทำงาน โดยมี State Machine คร่าวๆ ดังนี้
                
-    T1 : Fetch       MemRead         T2 : Decode  ALUSrcA = 0 (=PC)              T3 : ExecALU  ALUSrcA = 1 (=A=Reg[$rs])
-                     MemWrite = 0                 ALUSrcB = 3 (=signext(IR<<2))                ALUSrcB = 0 (=B=Reg[$rt])|
-                     lorD = X                     ALUOP = 0 (=add)                             ALUOP = 0 (=IR[28-26])
-                     IRWrite = 0
-    T4 : WriteReg    RegWrite = 1 (Reg[$rd] <- ALUout)
-                     MemtoReg = 0 (=ALUout)
-                     RegDst = 1 (=$rd)
+    T1 : Fetch  MemRead                        T2 : Decode  ALUSrcA = 0 (=PC)
+                MemWrite = 0                                ALUSrcB = 3 (=signext(IR<<2))
+                lorD = X                                    ALUOP = 0 (=add)
+                IRWrite = 0
+                
+    T3 : ExecALU  ALUSrcA = 1 (=A=Reg[$rs])     T4 : WriteReg  RegWrite = 1 (Reg[$rd] <- ALUout)
+                  ALUSrcB = 0 (=B=Reg[$rt])                    MemtoReg = 0 (=ALUout)
+                  ALUOP = 0 (=IR[28-26])                       RegDst = 1 (=$rd)
                      
   #### ส่งการบ้านครั้งที่ 7
  
